@@ -1,0 +1,35 @@
+.prac {
+    display : flex;
+    /* 현재화면의 75%만큼의 비율 */
+    height: 75vh;
+
+    flex-direction: row;
+
+    flex-wrap : wrap-reverse;
+
+    /* align-items: center; */
+
+    /**********************/
+    /* align-content */
+    /**********************/
+
+    /* cross axis 방향으로
+    item이 포장된(wrap)라인을 정렬하는 방법 
+    * 조건 : flex_wrap 속성이 Wap
+    */
+
+    /* cross axis 방향 시작 지점으로 포장된 item들을 정렬 */
+    /* align-content:flex_start; */
+
+    /* cross axis 방향 끝 지점으로 포장된 item들을 정렬 */
+    /* align-content:flex_end; */
+
+    /* cross axis 방향 중앙 지점으로 포장된 item들을 정렬 */
+    /* align-content:center; */
+
+    /* cross axis 방향으로 포장된 item을 양쪽으로 일정한 공간으로 나눠주어 정렬 */
+    /* align-content:space-around; */
+
+
+
+}   

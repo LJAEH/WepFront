@@ -1,0 +1,148 @@
+img {
+    width : 250px;
+    /* 한방향의 크기만 지정해도 비율에 맞춰서 조정됨 */
+}
+
+/* transform : 변형과 관련된 속성 */
+
+/*  
+    css 속성 작성 시 크로스 브라우저(브라우저가 달라지는 경우) 처리 방법
+    -ms- : 마이크로소프트 (익스플로러, 엣지)
+    webkit : 크롬, 사파리
+    -o- : 오페라
+    -moz- : 파이어폭스
+
+*/
+
+/* 좌우 이동 */
+
+.trans-x-2d:hover {
+    -ms-transform : translateX(100px);
+    -ms-transform : translateX(100px);
+    -webkit-transform : translateX(100px);
+}
+
+/* 상하 이동 */
+.trans-y-2d:hover {
+    -ms-transform : translateY(100px);
+    -ms-transform : translateY(100px);
+    -webkit-transform : translateY(100px);
+}
+
+/* 대각선이동 */
+.trans-d-2d:hover {
+    -ms-transform : translateY(100px , -100px);
+    -ms-transform : translateY(100px, -100px);
+    -webkit-transform : translateY(100px, -100px);
+}
+
+/* scale(배율) */
+
+.trans-x-scale-2d:hover{
+    transform: scaleX(2);
+    margin-left : 200px;
+}
+
+
+.trans-y-scale-2d:hover{
+    transform: scaleX(2);
+    margin: 100px 0;
+}
+
+
+.trans-d-scale-2d:hover{
+    transform: scaleX(2);
+    margin: 150px 150px;
+}
+
+
+.trans-rotate:hover{
+    transform: rotate(100deg); 
+
+    transition : 0.5s all;
+}
+
+/* x y z 축 이동 */
+.trans-3d:hover{
+    transform : perspective(300px) translate3d(50px, 50px, 50px);
+}
+
+/* x 축 회전 */
+
+.trans-rotate-x-3d{
+    transform : perspective(300px) rotateX(80deg);
+}
+
+/* y 축 회전 */
+
+.trans-rotate-y-3d{
+    transform : perspective(300px) rotateY(80deg);
+}
+
+
+/* z 축 회전 */
+
+.trans-rotate-z-3d{
+    transform : perspective(300px) rotateZ(80deg);
+}
+
+
+/* x y z 축 회전 */
+
+.trans-rotate-3d{
+    transform : perspective(300px) rotate3d(0.5,0.5,0.5,45deg);
+    /* rotate3d(x,y,z,각도) 
+    x,y,z는 0~1사이 숫자*/
+}
+
+/* transition */
+
+.box{
+    width : 150px;
+    height : 150px;
+    border : 1px solid black;
+    background-color: pink;
+
+    transition-duration: 1s;
+}
+
+.test1:hover{
+    background-color: hotpink;
+}
+
+.test2{
+    transition-duration: 3s;
+}
+
+
+.test2:hover{
+    transform: rotate(360deg);
+    background-color: skyblue;
+
+    border-radius: 50%
+}
+
+.test3{
+    transition-duration: 3s;
+    
+    transition-timing-function: ease-in-out;
+}
+
+.test3:hover{
+    background-color: beige;
+    transform: rotate(750deg);
+}
+
+
+.test4{
+    transition-delay: 2s;
+}
+
+.test4:hover{
+    transform: translateX(100px);
+}
+
+
+
+
+

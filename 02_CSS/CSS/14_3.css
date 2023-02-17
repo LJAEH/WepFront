@@ -1,0 +1,58 @@
+div {
+    background-color: rgb(201, 201, 201);
+    margin : 8px;
+}
+
+.head {
+    height : 100px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    height : 50px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.con {
+    display : flex;
+    height : 200px;
+    
+}
+.con div {
+
+    text-align: center;
+    line-height: 200px;
+
+}
+
+.con div:nth-of-type(1) {
+    flex-basis: 20%;
+    border: 1px solid rgb(255, 255, 255);
+    margin : 0;
+    height : 100%;
+    
+}
+.con div:nth-of-type(2) {
+    flex-basis: 60%;
+    border: 1px solid rgb(255, 255, 255);
+    margin : 0;
+    height : 100%;
+}
+
+.con div:nth-of-type(3) {
+    flex-basis: 20%;
+    border: 1px solid rgb(255, 255, 255);
+    margin : 0;
+    height : 100%;
+}
+
+
+.foot{
+    height : 50px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}

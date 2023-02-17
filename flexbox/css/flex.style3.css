@@ -1,0 +1,28 @@
+.flex-container {
+    height: 400px;
+    background-color: #ddd;
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+
+.order1{order:1;}
+.order2{order:2;}
+.order3{order:3;}
+.order4{order:4;}
+.order5{order:5;}
+
+.grow1{}
+
+/* flex basis */
+
+.basis-150px{flex-basis:150px}
+.basis-10{flex-basis:10%}
+.basis-25{flex-basis:25%}
+
+.flex1{
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 0 0 100px;
+}

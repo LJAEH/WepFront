@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin : 0;
+    padding : 0;
+}
+
+.blacknav{
+    background-color: black;
+    height : 70px;
+    display : flex;
+    justify-content: center;
+
+}
+
+.blacknav div:first-child {
+    background-color: black;
+    width: 1440px;
+    height : 100%;
+    display: flex;
+}
+.blacknavleft{
+    border : 3px dotted red;
+    flex-basis : 35%
+}
+.blacknavcenter{
+    border : 3px dotted red;
+    flex-basis : 30%
+}
+.blacknavright{
+    border : 3px dotted red;
+    flex-basis : 35%
+}
